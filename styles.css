@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    font-family: var(--font-family);
+}
+
+body {
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+
+:root {
+    /* Color */
+    /* Primary */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* Neutral */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    /* Font */
+    --font-size: 16px;
+    --font-family: "Red Hat Display", sans-serif;
+    --font-weight-small: 500;
+    --font-weight-medium: 700;
+    --font-weight-large: 900;
+}
+
+.content {
+    background-color: var(--very-pale-blue);
+    border-radius: 1rem;
+    height: 50rem;
+    width: 35rem;
+    overflow: hidden;
+    box-shadow: -20px 20px 60px #d0d2d9,
+        20px -20px 60px #ffffff;
+    margin: 5rem auto;
+}
+
+.info {
+    margin: 1rem 4rem;
+    text-align: center;
+}
+
+.img-hero {
+    width: 100%;
+}
+
+h1 {
+    margin: 2rem 0;
+    color: var(--dark-blue);
+}
+
+.summary {
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-small);
+    color: var(--desaturated-blue);
+}
+
+.money {
+    background-color: rgba(223, 222, 222, 0.308);
+    border-radius: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.money>img {
+    width: 3.6rem;
+    margin: 1rem;
+}
+
+.plan {
+    margin-left: -10rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--dark-blue);
+    font-size: 1.3rem;
+}
+
+span {
+    font-size: 1.1rem;
+    color: var(--desaturated-blue);
+}
+
+a {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    color: var(--pale-blue);
+    background-color: var(--bright-blue);
+    border: transparent;
+    padding: 1rem 6.7rem;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    font-weight: var(--font-weight-small);
+}
+
+button:hover {
+    cursor: pointer;
+    filter: opacity(70%);
+}
+
+.cancel {
+    margin-top: 1.3rem;
+    font-weight: var(--font-weight-medium);
+    color: var(--desaturated-blue);
+    font-size: 1.2rem;
+}
+
+.cancel:hover {
+    cursor: pointer;
+    color: var(--dark-blue);
+}
