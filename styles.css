@@ -13,7 +13,12 @@ html {
 body {
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-color: var(--pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 :root {
@@ -42,7 +47,7 @@ body {
     overflow: hidden;
     box-shadow: -20px 20px 60px #d0d2d9,
         20px -20px 60px #ffffff;
-    margin: 5rem auto;
+
 }
 
 .info {
